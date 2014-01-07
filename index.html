@@ -1,13 +1,16 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: home 
+title: My Random Stuff Collection
 ---
 
-<div id="home">
+<div id="latest">
   <h1>Blog Posts</h1>
-  <ul class="posts">
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+  <!--ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
+  </ul-->
 </div>
