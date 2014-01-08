@@ -70,7 +70,7 @@ a:visited { color: #a0a; }
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 .title a {
@@ -167,4 +167,32 @@ a:visited { color: #a0a; }
 
 .tags-display{
 	font-size:0.6em !important;
+}
+
+#categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+#categories li {
+  font: 200 14px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  padding-left:10px;
+}
+ 
+#categories li:last-child {
+  border: none;
+}
+ 
+#categories li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+ 
+}
+ 
+#categories li a:hover {
+  font-weight: bold;
+  background: #f6f6f6;
 }
