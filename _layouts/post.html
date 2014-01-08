@@ -6,4 +6,8 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
+<div class="tags-display">
+Tags: {% for tag in page.tags %}{{ tag }}{% if forloop.last != true %}, {% endif %} {% endfor %}
+</div>
 <p class="meta">{{ page.date | date_to_string }}</p>
+

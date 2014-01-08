@@ -1,6 +1,10 @@
-<h1 class="entry-title">
+<h2 class="entry-title">
+Latest Entry - 
 {% if post.title %}
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
 {% endif %}
-</h1>
+</h2>
 <div class="entry-content">{{ content }}</div>
+<div class="tags-display">
+Tags: {% for tag in post.tags %}{{ tag }}{% if forloop.last != true %}, {% endif %} {% endfor %}
+</div>
