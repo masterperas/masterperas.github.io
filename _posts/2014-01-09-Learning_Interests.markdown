@@ -3,7 +3,7 @@ layout: post
 title:  "Learning Interests"
 date:   2014-01-09 
 categories:  personal
-tags: learning
+tags: learning rails angular mongo spring
 tipue_description: "Stuff i want to learn, and some resources for it"
 ---
 
