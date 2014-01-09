@@ -215,3 +215,9 @@ a:visited { color:  #8085C1; }
 	padding-left:40px;
  
  }
+ 
+blockquote {
+border-left: 4px solid #DDD;
+padding: 0 15px;
+color: #777;
+}
