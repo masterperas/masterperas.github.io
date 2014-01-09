@@ -3,7 +3,7 @@
 # Jekyll tipuesearch_content generator.
 # check http://www.tipue.com/search for more info
 #
-# Version: 0.1.0 
+# Version: 0.1.1 
 #
 # Copyright (c) 2014 Nuno Furtado, http://about.me/nuno.furtado
 # Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
@@ -12,6 +12,16 @@
 #
 # To use it, simply drop this script into the _plugins directory of your Jekyll site.
 #
+# You also need to make sure your posts have a tipue_description element in the YAML, 
+# this is used to show the text on the search page
+#
+# Your posts categories(categories element in the YAML) get loaded into tipue tags, 
+# making them searchable.
+#
+# if you use a tags system (tags element in the YAML), tags are also loaded into 
+# tipue tags, making them searchable
+#
+
 require 'json'
 module Jekyll
 	
@@ -58,7 +68,8 @@ module Jekyll
 			
 			#Process all posts but the last one
 			all_but_last.each do |page|
-				tp_page = TipuePage.new(page.data['title'],page.data['tags'].to_s,page.url,page.data['tipue_description'].to_s)
+				
+				tp_page = TipuePage.new(page.data['title'],page.data['tags'].to_s +' '+ page.data['categories'].to_s ,page.url,page.data['tipue_description'].to_s)
 				target.puts(tp_page.to_json + ',')
 				
 			end
