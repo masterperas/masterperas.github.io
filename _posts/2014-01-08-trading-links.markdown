@@ -19,6 +19,19 @@ tipue_description: "Several links about trading"
 ###Technical Analisys
 * [Teach Me][teachmetechan]
 
+###Market Watchers 
+* http://ycharts.com/indices/%5EAEX/
+* https://www.tradingview.com/e/
+* http://www.lecho.be/bourses/euronext-amsterdam/aex
+
+###News
+* http://www.hotstockmarket.com/
+* http://www.boursorama.com/
+
+###Training
+* http://www.tradingacademy.com/resources/financial-education-center/technical-indicators.aspx
+* http://www.hotstockmarket.com/t/27430/teach-me-technical-analysis
+
 [beginnertrading]: http://www.investopedia.com/university/beginner-trading-fundamentals/
 [teachmetechan]:    http://www.hotstockmarket.com/t/27430/teach-me-technical-analysis
 [howtostart]: http://www.investopedia.com/university/how-start-trading/
