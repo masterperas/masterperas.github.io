@@ -4,6 +4,7 @@ title:  "Game Maker Stuff"
 date:   2014-01-08 
 categories: gamedev
 tags: gamemaker tutorials
+tipue_description: "Several links about game development with GameMaker"
 ---
 
 * [Gamemaker Studio Tutorials - Beginner To Pro!][youtube-wizird]

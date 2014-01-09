@@ -3,7 +3,8 @@ layout: post
 title:  "Trading Links"
 date:   2014-01-08 
 categories: trading
-tags: trading tutorials
+tags: trading tutorials stock
+tipue_description: "Several links about trading"
 ---
 
 ###Getting Started

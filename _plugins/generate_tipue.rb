@@ -69,13 +69,13 @@ module Jekyll
 			#Process all posts but the last one
 			all_but_last.each do |page|
 				
-				tp_page = TipuePage.new(page.data['title'],page.data['tags'].to_s +' '+ page.data['categories'].to_s ,page.url,page.data['tipue_description'].to_s)
+				tp_page = TipuePage.new(page.data['title'],page.data['tags'].to_s .concat(' ').concat(page.data['categories'].to_s),page.url,page.data['tipue_description'].to_s)
 				target.puts(tp_page.to_json + ',')
 				
 			end
 			
 			#Do the last
-			tp_page = TipuePage.new(last.data['title'],last.data['tags'].to_s,last.url,last.data['tipue_description'].to_s)
+			tp_page = TipuePage.new(last.data['title'],last.data['tags'].to_s.concat(' ').concat(last.data['categories'].to_s),last.url,last.data['tipue_description'].to_s)
 			target.puts(tp_page.to_json)
 			
 			target.puts(']};')
