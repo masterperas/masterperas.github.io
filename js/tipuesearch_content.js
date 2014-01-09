@@ -1,5 +1,5 @@
 var tipuesearch = {"pages": [
-     {"title": "Tipue Search, a site search engine jQuery plugin", "text": "Tipue Search is a site search engine jQuery plugin. Tipue Search is open source and released under the MIT License, which means it's free for both commercial and non-commercial use. Tipue Search is responsive and works on all reasonably modern browsers.", "tags": "JavaScript", "loc": "http://www.tipue.com/search"},
-     {"title": "Tipue drop, a search suggestion box jQuery plugin", "text": "Tipue drop is a search suggestion box jQuery plugin. Tipue drop is open source and released under the MIT License, which means it's free for both commercial and non-commercial use. Tipue drop is responsive and works on all reasonably modern browsers.", "tags": "JavaScript", "loc": "http://www.tipue.com/drop"},
-     {"title": "About Tipue", "text": "Tipue is a small web development studio based in North London. We've been around for over a decade.", "tags": "", "loc": "http://www.tipue.com/about"}
+{"title":"Welcome to Jekyll!","tags":"","loc":"/jekyll/2014/01/07/welcome-to-jekyll.html","text":""},
+{"title":"Game Maker Stuff","tags":"gamemaker tutorials","loc":"/gamedev/2014/01/08/game-maker-stuff.html","text":""},
+{"title":"Trading Links","tags":"trading tutorials","loc":"/trading/2014/01/08/trading-links.html","text":""}
 ]};
