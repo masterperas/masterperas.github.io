@@ -3,7 +3,7 @@ layout: post
 title:  "Learning Interests"
 date:   2014-01-09 
 categories:  personal
-tags: learning rails angular mongo spring
+tags: learning rails angular mongo spring cors
 tipue_description: "Stuff i want to learn, and some resources for it"
 ---
 
@@ -30,6 +30,16 @@ tipue_description: "Stuff i want to learn, and some resources for it"
 * [Spring Data JPA - Reference][spring-jpa]
 * [Spring Data JPA Tutorial][spring-jpa2]
 * [Spring Data JPA example][spring-jpa3]
+
+### CORS
+* https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+* http://enable-cors.org/
+* http://www.html5rocks.com/en/tutorials/cors/
+* http://zhentao-li.blogspot.pt/2012/06/enable-cors-support-in-rest-services.html
+* http://spring.io/guides/gs/rest-service-cors/
+* http://jpgmr.wordpress.com/2013/12/12/cross-origin-resource-sharing-cors-requests-with-spring-mvc/
+
+
 
 [rorbook]:http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
 [spring-rest]: http://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch18s02.html
