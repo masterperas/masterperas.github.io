@@ -3,7 +3,7 @@ layout: post
 title:  "Learning Interests"
 date:   2014-01-09 
 categories:  personal
-tags: learning rails angular mongo spring cors
+tags: learning rails angular mongo spring cors jquery localstorage backbone
 tipue_description: "Stuff i want to learn, and some resources for it"
 ---
 
@@ -11,6 +11,9 @@ tipue_description: "Stuff i want to learn, and some resources for it"
 
 * [rorbook]
 
+### Backbone JS
+
+* http://addyosmani.github.io/backbone-fundamentals
 
 ### Angular JS
 
@@ -38,8 +41,15 @@ tipue_description: "Stuff i want to learn, and some resources for it"
 * http://zhentao-li.blogspot.pt/2012/06/enable-cors-support-in-rest-services.html
 * http://spring.io/guides/gs/rest-service-cors/
 * http://jpgmr.wordpress.com/2013/12/12/cross-origin-resource-sharing-cors-requests-with-spring-mvc/
+* http://www.html5rocks.com/en/tutorials/cors/
 
+### Local Storage
+* http://coding.smashingmagazine.com/2010/10/11/local-storage-and-how-to-use-it/
+* http://upstatement.com/blog/2012/01/jquery-local-storage-done-right-and-easy/
+* https://github.com/julien-maurel/jQuery-Storage-API
 
+### Gamedev
+* http://www.fetzenet.de/blog/?page_id=697 - Duality - .Net Gamedev Library
 
 [rorbook]:http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
 [spring-rest]: http://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch18s02.html
