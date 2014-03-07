@@ -13,7 +13,9 @@ tipue_description: "Several links about game development with GameMaker"
 * [Create cross-platform games with GameMaker: Studio][xplattut]
 * [MrIsaacs Tutorials][MrIsaacs] 
 * [Arcade Programming Tutorial using GameMaker:Studio][arcadetut]
+* [Scrolling Shooter][scrolling]
 
+[scrolling]: http://berathen.com/2013/11/scrolling-shooter-tutorial-part-1.php
 [glg-platformer]: http://www.greenlightgo.org/education/gamedev/platformer/
 [youtube-wizird]:    http://gmc.yoyogames.com/index.php?showtopic=573657
 [tigsource]: http://forums.tigsource.com/index.php?topic=3142.0
