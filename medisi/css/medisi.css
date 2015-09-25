@@ -1,0 +1,48 @@
+.day_box{
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: 1px solid #888888; //#005c87;
+	min-height:300px;
+	text-align:center;
+}
+
+.day_box > h4{
+	font-weight: bold;
+	border-bottom: 1px solid #888888;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+
+.day_box > a{
+	margin: 5px;
+	color: white;
+	font-weight: bold;
+	cursor:pointer;
+	text-align:left;
+	padding-left: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-webkit-box-shadow: 3px 4px 5px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 4px 5px -4px rgba(0,0,0,0.75);
+	box-shadow: 3px 4px 5px -4px rgba(0,0,0,0.75);
+	display: inherit;    
+	text-decoration: inherit;
+}
+
+.day_box > a:hover{
+	-webkit-box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px -4px rgba(0,0,0,0.75);
+}
+.day_box > .consulta {
+
+	background-color:#6363DA;
+
+}
+
+.day_box > .followup {
+	background-color:#FB7171;
+}
