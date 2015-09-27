@@ -6,7 +6,7 @@
 <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 <link href="css/medisi.css" rel="stylesheet">
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"-->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,39 +78,66 @@
 <!-- Begin page content -->
 <div class="container">
 	<div class="page-header">
-		<h3> Manuel Rodrigues (47)</h3>
+		<h3> 
+			Manuel Rodrigues (47)
+			<div class="" role="group" aria-label="..." style="
+				display: inline;
+				">
+				<button type="button" class="btn btn-sm btn-default" data-toggle="popover" data-trigger="focus" data-placement="bottom"  data-content="Permite marcação de consultas e follow ups">Nova Marcação</button>
+				<button type="button" class="btn btn-sm btn-default" data-toggle="popover" data-trigger="focus" data-placement="bottom"  data-content="Registo de resultado de consultas e follow ups. Exames ?!">Registo</button>
+				<button type="button" class="btn btn-sm btn-default hidden-xs" data-toggle="popover" data-trigger="focus"  data-placement="bottom" data-content="emissão de receitas">Receita</button>
+				<button type="button" class="btn btn-sm btn-default hidden-xs" data-toggle="popover" data-trigger="focus" data-placement="bottom"  data-content="emissão de relatórios e outros documentos">Relatório</button>
+
+			</div>
+		</h3>
 	</div>
 </div>
-<div class="container" sTyle="text-align:center; padding:0px;">
+<div class="container" sTyle="text-align:center; padding-top:0px;">
 	<div class="row">
-		<div class="col-md-offset-1 col-md-10">
+		<div class="col-sm-10 col-md-offset-1 col-md-10">
 
 			<!-- Nav tabs -->
 			<ul class="nav nav-pills" role="tablist">
-				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Folha Clinica</a></li>
-				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Dados Pessoais</a></li>
-				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Histórico</a></li>
+				<li role="presentation" class="active"><a href="#clinica" aria-controls="clinica" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-briefcase"></span><span class="hidden-xs">	Folha Clinica</span>
+				</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-paperclip"></span><span class="hidden-xs">	Dados Pessoais</span>
+				</a></li>
+				<li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-book"></span>	<span class="hidden-xs">	Histórico</span>
+				</a></li>
 			</ul>
 
 			<!-- Tab panes -->
 			<div class="tab-content" style="min-height:200px">
-				<div role="tabpanel" class="tab-pane active" id="home">...</div>
-				<div role="tabpanel" class="tab-pane" id="profile">...</div>
-				<div role="tabpanel" class="tab-pane" id="messages">...</div>
-				<div role="tabpanel" class="tab-pane" id="settings">...</div>
+				<div role="tabpanel" class="tab-pane active" id="clinica">
+					<ul>
+						<li>Dados clinicos</li>
+						<li>Problemas </li>
+						<li>ultima consulta </li>
+						<li>marcações pendentes</li>
+					</ul>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="profile">
+					<ul>
+						<li>Dados Pessoais</li>
+						<li>morada </li>
+						<li>telefones </li>
+					</ul>
+
+				</div>
+				<div role="tabpanel" class="tab-pane" id="history">
+					<ul>
+						<li>Historico médico</li>
+						<li>consultas</li>
+						<li>exames </li>
+						<li>follow ups</li>
+					</ul>
+
+					<div>
 			</div>
 
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-offset-1 col-md-10" style="text-align:left">
-			<div class="btn-group btn-group" role="group" aria-label="...">
-				<button type="button" class="btn btn-primary">Consulta</button>
-				<button type="button" class="btn btn-primary">Receita</button>
-				<button type="button" class="btn btn-primary">Follow-up</button>
-				<button type="button" class="btn btn-primary">Relatório</button>
-
-			</div>	
 		</div>
 	</div>
 </div>
@@ -125,5 +152,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+  })
+</script>
 </body>
 </html>

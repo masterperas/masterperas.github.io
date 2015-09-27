@@ -5,8 +5,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 <link href="css/medisi.css" rel="stylesheet">
+<link href="css/typeahead.css" rel="stylesheet">
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"-->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -81,8 +82,8 @@
 <div class="container">
 	<div class="page-header">
 		<form class=""  style="" role="search" action="clientdetail.html">
-			<div class="form-group">
-				<input type="text" size=50 class="form-control" placeholder="Pesquisar Cliente">
+			<div id="cliente_search" class="form-group">
+				<input type="text" size=50 class="form-control typeahead" placeholder="Pesquisar Cliente">
 			</div>
 		</form>	
 	</div>
@@ -92,9 +93,9 @@
 		<div class="col-sm-offset-1 col-sm-3 col-md-2 col-xs-offset-1 col-xs-10 ">
 			<div class=" day_box">
 				<h4>23 Setembro </h4>
-				<a href="clientdetail.html" class="consulta">13:00 - Rodrigues, M.</a>
-				<a href="clientdetail.html" class="followup">13:30 - Fernandes, B</a>
-				<a href="clientdetail.html" class="followup">17:00 - Conçalves, R.</a>
+				<a href="clientdetail.html" class="consulta" data-toggle="tooltip" data-placement="bottom" title="Consulta Agendada. Click...">13:00 - Rodrigues, M.</a>
+				<a href="clientdetail.html" class="followup" data-toggle="tooltip" data-placement="bottom" title="Follow up agendado. Click...">13:30 - Fernandes, B</a>
+				<a href="clientdetail.html" class="followup" data-toggle="tooltip" data-placement="bottom" title="Follow up agendado. Click...">17:00 - Conçalves, R.</a>
 
 			</div>
 
@@ -102,13 +103,13 @@
 		<div class="col-xs-1 col-sm-3 col-md-2 hidden-xs">
 			<div class=" day_box">
 				<h4>24 Setembro</h4>
-				<a href="clientdetail.html"   class="consulta">13:00 - Rodrigues, M.</a>
+				<a href="clientdetail.html"   class="consulta" data-toggle="tooltip" data-placement="bottom" title="Consulta Agendada. Click...">13:00 - Rodrigues, M.</a>
 			</div>
 		</div>
 		<div class="col-xs-1 col-sm-3 col-md-2 hidden-xs ">
 			<div class=" day_box">
 				<h4>25 Setembro</h4>
-				<a href="clientdetail.html" class="followup">17:50 - Rodrigues, M.</a>
+				<a href="clientdetail.html" class="followup" data-toggle="tooltip" data-placement="bottom" title="Follow up agendado. Click...">17:50 - Rodrigues, M.</a>
 			</div>
 
 		</div>
@@ -137,5 +138,57 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/typeahead.bundle.js"></script>
+<script type="text/javascript">
+
+$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+
+		var clientes =[
+			{
+				"nome":"Manuel Rodrigues",
+				"idade":"47",
+				"telefone":"12345656",
+				"tokens":["Manuel","Rodrigues","12345656"]
+
+			},
+	{
+				"nome":"Bruno Fernandes",
+				"idade":"27",
+				"telefone":"12345656",
+				"tokens":["Bruno","Fernandes","12345656"]
+
+			},
+	{
+				"nome":"Ricardo Gonçalves ",
+				"idade":"27",
+				"telefone":"12345656",
+				"tokens":["Ricardo","Gonçalves","12345656"]
+
+			}
+		];
+		var clientesBd = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('nome'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+ 		//prefetch: 'http://twitter.github.io/typeahead.js/data/films/post_1960.json',
+		local: clientes
+  });	
+		$('#cliente_search .typeahead ').typeahead(null, {
+name: 'Clientes',
+display: 'nome',
+source: clientesBd,
+templates: {
+empty: [
+'<div class="empty-message" style="padding-left:10px">',
+'Cliente Não Encontrado. <a href="#">Criar Nova Ficha de Cliente?</a>',
+'</div>'
+].join('\n'),
+suggestion:function (data) {
+        return '<p style="cursor:pointer" ><strong>' + data.nome + '</strong> (' + data.idade + ') - '+data.telefone+'</p>';
+    } 
+}
+});
+		})
+</script>
 </body>
 </html>
