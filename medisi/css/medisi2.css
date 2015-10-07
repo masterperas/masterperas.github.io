@@ -1,0 +1,99 @@
+.day_box{
+	border: 1px solid #E2E2E2; //#005c87;
+	min-height:100px;
+	
+	padding-top:10px;
+	font-size: x-small;
+	overflow: hidden;
+}
+.col-md-1 {
+	padding:0px;
+}
+
+.col-md-1{
+width: 13.33333333%;
+}
+
+
+
+.day_box > .day{
+	font-weight: bold;
+	text-align: left;
+	vertical-align: top;
+	position: absolute;
+	left:5px;
+	font-size: x-small;
+	top: 0px;
+}
+
+.popover{
+	width:300px;
+}
+.popover-content{
+	padding: 5px;
+    margin: 0px;
+}
+
+.event{
+	padding-left:5px;
+	margin-top:2px;
+	margin-bottom:2px;
+	cursor:pointer;
+	display: block;
+	text-decoration:none !important;
+}
+
+.consulta{
+	//border:1px solid #373AD7; 
+	color:#1d1d1d;
+	background-color:#babbff;
+	
+}
+
+.followup{
+	//border:1px solid #92E1C0;
+	color:#1d1d1d;
+	background-color:#92E1C0;
+}
+
+.surplus{
+    text-decoration: underline;
+    color: #15c;
+	cursor:pointer;
+	margin-left: 18px;
+}
+
+.ep-header{
+		border-bottom: 1px solid #E2E2E2;
+		margin-bottom:5px;
+}
+
+.ep-title{
+	font-weight: bold;
+}
+
+.ep-date{
+	font-weight: bold;
+	font-size: smaller;
+}
+
+.ep-content{
+	margin-left:10px;
+}
+
+.ep-content > * {
+    display: block;
+}
+
+.ep-footer{
+	margin-top: 5px;
+	border-top: 1px solid #E2E2E2;
+}
+.ep-footer-right{
+    float: right;
+    white-space: nowrap;
+}
+
+.ep-footer-left{
+    white-space: nowrap;
+}
